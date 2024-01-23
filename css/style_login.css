@@ -1,0 +1,257 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: 'Sunflower', sans-serif;
+}
+
+ul, li, ol{list-style: none;}
+a{text-decoration: none; color:black;}
+
+p{ font-size:0.9rem; text-align: center;}
+
+h3{ font-size:1rem; text-align: center;}
+
+html{height: 100%;}
+
+body{
+    height: 100%;
+    background: #eae7f5;
+}
+
+/*====================== header ===========================*/
+.header{ width: 100%; }
+
+.header .container{ width: 100%; }
+
+.header .container .top-row{ padding-top: 20px; width: 100%; }
+
+.header .container .top-row > .col{
+    height: 80px;
+}
+
+.header .container .top-row .logo{ text-align: center; }
+
+.header .container .top-row .logo a{color:#6351ac;}
+
+.header .container .middle-row{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.header .container .middle-row .search-box{
+    width: 100%; height: 40px;
+    background-color: #c8baff;
+    border: 3px solid #d7d2eb;
+    border-radius: 30px;
+    position:relative;
+}
+
+.header .container .middle-row .search-box .search-input{
+    width: 80%; height: 100%;
+    border: 0;
+    outline: 0;
+    color:white;
+    background-color: transparent;
+    position:absolute; left:10px;
+}
+
+.header .container .middle-row .search-box .search-btn{
+    width: 15%; height: 100%;
+    border:none;
+    background-color: transparent;
+    position:absolute; right:5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.header .container .middle-row .search-box .search-btn img{
+    width: 80%; height: 80%;
+}
+
+.header .container .bottom-row{ 
+    width: 100%; max-width: 800px;
+    margin:0 auto;
+}
+
+/*====================== section ======================*/
+.login{min-height: 100%; padding: 10vw;}
+
+.login .container{
+    max-width: 600px;
+    border: 2px solid #4d3999;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 10px;
+}
+
+.login .container .title-box{
+    margin:10px;
+}
+
+.login .container .title-box .title{ 
+    color: #6351ac;
+    font-size:1.5rem; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.login .container .row{ 
+    padding: 20px;
+}
+
+.login .container .row .col:first-of-type{
+    display: flex;
+    justify-content: center; align-items: center;
+    background-color: #9a83f4;
+    border-radius: 10px;
+}
+
+.login .container .row .col:last-of-type{
+    padding-left:26px;
+}
+
+@media screen and (max-width:576px) {
+    .login .container .row .col:last-of-type{
+        padding-left:0;
+    }
+}
+
+.login .container .row .col.info p{
+    width: 100%;
+    margin:0;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.login .container .row .gt .box{ 
+    margin: 10px 0;
+}
+
+.login .container .row .col .gt .sns{
+    text-align: center;
+}
+
+.login .container .row .col .gt .sns .logo{
+    margin:5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login .container .row .col .gt .sns .logo a{
+    width: 30px;
+    display: block;
+    
+    background-color: rgb(253, 252, 255);
+    border-radius: 10px;
+}
+
+.login .container .row .col .gt .id-box{
+    border: 1px solid #4d3999;
+    border-radius: 20px;
+}
+
+.login .container .row .col .gt .id-box #input-id{
+    width: 100%; height: 30px;
+    padding:0 10px;
+    background: transparent;
+    border:none;
+    outline: none;
+    text-align: left;
+}
+
+.login .container .row .col .gt .pwd-box{
+    border: 1px solid #4d3999;
+    border-radius: 20px;
+    outline: none;
+}
+
+.login .container .row .col .gt .pwd-box #input-pwd{
+    width: 100%; height: 30px;
+    padding:0 10px;
+    background: transparent;
+    border:none;
+    outline: none;
+    text-align: left;
+}
+
+.login .container .row .col .gt .errorBox{
+    color:red;
+}
+
+.login .container .row .col .gt .login-option{
+    width: 100%;
+    font-size: 14px;
+}
+
+.login .container .row .col .gt .btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .container .row .col .gt .btn-box input{
+    width: calc((100% - 10px) / 2); height: 30px;
+    background-color: #c8baff;
+    border:none;
+    border-radius: 5px;
+}
+
+/*====================== footer ======================*/
+.footer{
+    width: 100%;
+    background-color: rgb(28, 11, 56);
+    color:white;
+    position: absolute; background-origin: 0;
+}
+
+.footer .container{
+    width: 100%;
+}
+
+.footer .container .title{
+    padding:20px 0; margin:0;
+    text-align: center;
+}
+
+.footer .container .title a{ color:white;}
+
+.footer .container .row{ 
+    width: 100%; max-width: 768px;
+    margin:0 auto;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.footer .container .row .col{
+    height: 100%;
+}
+
+.footer .container .row .col ul{margin: 0; padding: 0;}
+
+.footer .container .row .col ul li a{color:white}
+
+.footer .container .row .col ul li a img{ width:120px; height: 80px;}
+
+.footer .container .row .col ul li:first-of-type{
+    color:rgb(255, 196, 0); font-weight: bold;
+}
+
+.footer .container .row .col.sns ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .container .row .col.sns ul li:first-of-type{width: 100%;}
+
+@media screen and (max-width:576px) {
+    .footer .container .row{ font-size: 14px; }
+}
+
+@media screen and (max-width:480px) {
+    .footer .container .row{ 
+        
+        font-size: 12px; 
+    }
+}
